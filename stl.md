@@ -45,3 +45,25 @@ sort(arr.begin(), arr.end());
 sort(arr.begin(), arr.end(), compare); 
 ```
 
+
+map
+=============================
+1. 선언
+```
+map<key_type, value_type> map_name;
+```
+
+2. 값 넣기
+```
+map[key] = value;
+```
+
+3. 정렬
+map은 자동정렬됨.
+
+4. 선회
+map<key_type, value_type>::iterator iter;
+for (iter = m.begin(); iter != m.end(); ++iter)
+{
+  cout << iter->first << iter->second; //value에 자료형이 배열이라면 iter->second[0]처럼 인덱스 접근이 가능함.
+}
