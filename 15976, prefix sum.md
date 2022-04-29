@@ -9,6 +9,7 @@ y_idx.resize(m+1); sum.resize(m+1);
         sum[i+1] = sum[i] + value;
     }
     y_idx[m] = 1e18;
+    //1e18은 double 형식의 1*10**18이다.
 ```
 부분합 구하기 빌드업. 활용할 곳이 많을 것 같다. 
 만약 idx a부터 idx b까지의 부분합을 알고싶다면,
