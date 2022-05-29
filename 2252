@@ -1,0 +1,47 @@
+
+```
+#include <bits/stdc++.h>
+using namespace std;
+using pii = pair<int, int>;
+
+//진입차수 배열 / node값 : index / 진입차수 : first / 제거 여부 : second (0: 제거 / 1:제거 x)
+pii in_d[32002]; 
+
+int edge[32002]; //간선표시 배열 child : index / parent : value.
+queue<int> q;
+
+int n, m;
+
+void init()
+{
+    cin >> n >> m;
+
+    for (int i=0; i<m; i++)
+    {
+           int a, b;
+           cin >> a >> b;
+           
+           edge[a] = b;
+    }
+}
+
+void solve()
+{
+    for (int i=1; i<=n; i++)
+    {
+        if (in_d[a])
+    }
+}
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    
+    cout << in_d[0].first << in_d[0].second;
+    
+
+    return 0;
+}
+```
